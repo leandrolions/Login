@@ -13,7 +13,7 @@ import ar.com.nat.auth.repository.UserRepository;
 @Service
 public class UserServiceImpl implements UserService{
 
-	   @Autowired
+		@Autowired
 	    private UserRepository userRepository;
 	    @Autowired
 	    private RoleRepository roleRepository;
