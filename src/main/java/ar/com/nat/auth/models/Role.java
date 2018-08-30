@@ -10,7 +10,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "role")
+@Table(name = "role",schema="frontend")
 public class Role {
     private Long id;
     private String name;

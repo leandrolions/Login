@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
 <html >
@@ -14,10 +13,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Log in with your account</title>
+    <title>${titulo}</title>
 
-    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/common.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,8 +40,8 @@
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
-            <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <h4 class="text-center"><a href="/crearuser">Crear Usuario</a></h4>
         </div>
 
     </form>
@@ -50,6 +49,6 @@
 </div>
 <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
 </body>
 </html>
